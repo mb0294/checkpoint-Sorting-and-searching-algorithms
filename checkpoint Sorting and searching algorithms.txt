@@ -1,0 +1,13 @@
+FUNCTION Insertion sort(arr : ARRAY_OF INTEGER, elt : INTEGER ) : INTEGER   
+VAR    
+    i,j,n : INTEGER;
+BEGIN    
+    n := tab.length ;    
+    FOR i FROM 0 TO n-1 STEP 1 DO    
+    elt := arr[i];    j = i - 1;    
+    END_FOR    
+    WHILE (j >= 0 AND arr[j] > elt) DO 
+   arr[j + 1] := arr[j];    j = j - 1;    
+    END_WHILE    
+    RETURN -1 ;   
+END
